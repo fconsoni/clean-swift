@@ -8,13 +8,13 @@
 
 import UIKit
 
-final class ___VARIABLE_sceneName___Presenter {
-    private weak var viewController: ___VARIABLE_sceneName___ViewController?
+protocol ___VARIABLE_sceneName___Presentable {
+    func presentSomething()
+}
+
+final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentable {
+    weak var viewController: ___VARIABLE_sceneName___Showable?
     
-	init(with viewControler: ___VARIABLE_sceneName___ViewController?) {
-		self.viewController = viewController
-	}
-	
     func presentSomething() {
         
     }

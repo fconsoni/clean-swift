@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>
-	<string>This generates a new view controller using Uncle Bob&apos;s clean architecture. Your view/view controller logic goes here.</string>
+	<string>This generates a new worker using Uncle Bob&apos;s clean architecture. Your business logic goes here.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___Worker</string>
 			<key>Description</key>
-			<string>The view controller name</string>
+			<string>The worker name</string>
 			<key>Identifier</key>
-			<string>viewControllerName</string>
+			<string>workerName</string>
 			<key>Name</key>
-			<string>View Controller Name:</string>
+			<string>Worker Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -52,8 +52,8 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>SortOrder</key>
-	<string>1</string>
+	<string>2</string>
 	<key>Summary</key>
-	<string>This generates a new view controller using Uncle Bob&apos;s clean architecture. Your view/view controller logic goes here.</string>
+	<string>This generates a new worker using Uncle Bob&apos;s clean architecture. Your business logic goes here.</string>
 </dict>
 </plist>

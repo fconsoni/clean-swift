@@ -90,27 +90,17 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>UIViewController</string>
+			<string>___VARIABLE_sceneName:identifier___Worker</string>
 			<key>Description</key>
-			<string>What view controller class to subclass for the new scene</string>
-			<key>FallbackHeader</key>
-			<string>#import &lt;UIKit/UIKit.h&gt;</string>
+			<string>The worker name</string>
 			<key>Identifier</key>
-			<string>viewControllerSubclass</string>
+			<string>workerName</string>
 			<key>Name</key>
-			<string>Subclass of:</string>
-			<key>NotPersisted</key>
-			<true/>
+			<string>Worker Name:</string>
 			<key>Required</key>
-			<string>YES</string>
+			<true/>
 			<key>Type</key>
-			<string>class</string>
-			<key>Values</key>
-			<array>
-				<string>UIViewController</string>
-				<string>UITableViewController</string>
-				<string>UICollectionViewController</string>
-			</array>
+			<string>static</string>
 		</dict>
 	</array>
 	<key>Platforms</key>

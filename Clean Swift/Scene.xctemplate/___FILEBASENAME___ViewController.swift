@@ -7,39 +7,29 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: UICollectionViewController {
-    private var router: ___VARIABLE_sceneName___Router?
-    private var interactor:  ___VARIABLE_sceneName___Interactor?
+protocol ___VARIABLE_sceneName___Showable: class {
+    func displaySomething()
+}
+
+final class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___Showable {
+    var router: ___VARIABLE_sceneName___Routable?
+    var interactor:  ___VARIABLE_sceneName___Interactable?
     
     init() {
         super.init(nibName: String(describing: ___VARIABLE_sceneName___ViewController.self), bundle: .none)
-        self.setup()
     }
     
     // MARK:- Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setup()
+        super.init(nibName: String(describing: ___VARIABLE_sceneName___ViewController.self), bundle: .none)
     }
     
     override func viewDidLoad(){
         super.viewDidLoad()
-    }
-    
-    // MARK:- Setup
-    private func setup() {
-        self.router = ___VARIABLE_sceneName___Router()
-        self.router?.viewController = self
-        
-        let presenter = ___VARIABLE_sceneName___Presenter()
-        presenter.viewController = self
-        
-        self.interactor = ___VARIABLE_sceneName___Interactor(withPresenter: presenter)
     }
     
     // MARK: Do something
