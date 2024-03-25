@@ -39,7 +39,7 @@ extension ___VARIABLE_sceneName___Configurator {
         let worker: ___VARIABLE_sceneName___Worker
         
         static var `default`: Configuration {
-            return Configuration(viewController: ___VARIABLE_sceneName___ViewController(),
+            return Configuration(viewController: ___VARIABLE_sceneName___ViewController(rootView: ___VARIABLE_sceneName___View()),
                                  interactor: ___VARIABLE_sceneName___Interactor(),
                                  presenter: ___VARIABLE_sceneName___Presenter(),
                                  router: ___VARIABLE_sceneName___Router(),
